@@ -9,6 +9,7 @@ class BottomNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final navigationProvider = Provider.of<NavigationProvider>(context);
+    
     return BottomNavigationBar(
         currentIndex: navigationProvider.actualPage,
         onTap: (index) => navigationProvider.actualPage = index,
