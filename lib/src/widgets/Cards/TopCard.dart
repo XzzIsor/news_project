@@ -17,7 +17,7 @@ class TopCard extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 10),
 
       child: Row(children: [
-        Text('${index + 1}', style: TextStyle(color: myTheme.accentColor),),
+        Text('${index + 1})', style: TextStyle(color: myTheme.accentColor),),
         SizedBox(width: 5,),
         Text('${notice.source!.name}'),
 

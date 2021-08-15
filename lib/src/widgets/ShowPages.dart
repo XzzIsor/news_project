@@ -17,7 +17,7 @@ class ShowPages extends StatelessWidget {
       //physics: BouncingScrollPhysics(),
       physics: NeverScrollableScrollPhysics(),
       controller: navigationProvider.pageController,
-      children: [Tab1Page(), Container(color: Colors.brown)],
+      children: [Tab1Page(), Tab2Page()],
     );
   }
 }

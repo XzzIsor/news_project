@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_project/src/theme/ThemeApp.dart';
 import 'package:provider/provider.dart';
 
 import 'package:news_project/src/providers/providers.dart';
@@ -12,6 +13,7 @@ class BottomNavigation extends StatelessWidget {
     
     return BottomNavigationBar(
         currentIndex: navigationProvider.actualPage,
+        selectedItemColor: myTheme.accentColor,
         onTap: (index) => navigationProvider.actualPage = index,
         items: [
           BottomNavigationBarItem(
